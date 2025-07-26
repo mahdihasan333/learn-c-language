@@ -156,19 +156,31 @@ int main()
     
     
     // Practice Question 17 ===> Keep taking numbers as input from user until user enters an odd number.
+    // int n;
+    // do {
+    //     printf("enter number: ");
+    //     scanf("%d", &n);
+    //     printf("%d \n", n);
+
+    //     if(n % 2 != 0){
+    //         break;
+    //     }
+    // } while(1);
+    // printf("thank you!");
+    
+    // Practice Question 18 ===> Keep taking numbers as input from user until user enters a number which is multiple of 7.
+    
     int n;
     do {
         printf("enter number: ");
         scanf("%d", &n);
         printf("%d \n", n);
 
-        if(n % 2 != 0){
+        if(n %  == 0){
             break;
         }
     } while(1);
     printf("thank you!");
-    
-    // Practice Question 18 ===> Keep taking numbers as input from user until user enters a number which is multiple of 7.
     
     
     return 0;
