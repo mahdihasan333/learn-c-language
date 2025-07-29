@@ -236,21 +236,109 @@
 // Practice Question 32 ===> Sum of first n natural numbers.
 // n -->  1 + 2 + 3 + 4 ------ n + n +
 
-int sum (int n);
-int main(){
-    printf("sum is : %d", sum(5));
-    return 0;
-}
+// int sum (int n);
+// int main(){
+//     printf("sum is : %d", sum(5));
+//     return 0;
+// }
 
-// recursive function
-int sum (int n){
-    if(n == 1){
-        return 1;
-    }
-    int sumNm1 = sum(n-1);  //sum of 1 to n
-    int sumN = sumNm1 + n;
-    return sumN;
-}
+// // recursive function
+// int sum (int n){
+//     if(n == 1){
+//         return 1;
+//     }
+//     int sumNm1 = sum(n-1);  //sum of 1 to n
+//     int sumN = sumNm1 + n;
+//     return sumN;
+// }
+
+
+// Practice Question 33 ===> Factorial of n.
+
+// int fact(int n);
+// int main(){
+//     printf("factorial is : %d", fact(6));
+//     return 0;
+// }
+
+// int fact(int n){
+//     if(n == 0){
+//         return 1;
+//     }
+//     int factNm1= fact(n - 1);
+//     int factN = factNm1 * n;
+//     return factN;
+// }
+
+
+// Properties of Recursion
+// a. Anything that can be done with iteration, can be done with recursion and vice-versa.
+// b. Recursion can sometimes give the most simple solution.
+// c. Base Case is the condition which stops recursion.
+// d. Iteration has infinite loop & Recursion has stack overflow.
+
+// Practice Question 34 ===> Write a function to convert celsius to fahrenheit.
+
+// float convertTemp(float celsius);
+
+// int main(){
+//     float far = convertTemp(37);
+//     printf("far %f", far);
+//     return 0;
+// }
+
+// float convertTemp(float celsius){
+//     float far = celsius * (9.0 / 5.0) + 32;
+//     return far;
+// }
+
+
+// Practice Question 34 ===> Write a function to calculate Percentage of student from Marks in Science, Math & Sanskrit.
+
+// int calcPercentage(int science, int math, int bangla);
+
+// int main(){
+//     int science = 98;
+//     int math = 95;
+//     int bangla = 99;
+//     printf("percentage is : %d", calcPercentage(science, math, bangla));
+//     return 0;
+// }
+
+// int calcPercentage(int science, int math, int bangla){
+//     return ((science + math + bangla) / 3);
+// }
+
+// Practice Question 35 ===> Write a function to print n terms of the fibonacci sequence.
+
+// int fib(int n);
+// int main(){
+//     printf("%d", fib(6));
+//     return 0;
+// }
+
+// int fib(int n){
+//     if(n == 0){
+//         return 0;
+//     }
+//     if(n ==  1){
+//         return 1;
+//     }
+    
+//     int fibNm1 = fib(n - 1);
+//     int fibNm2 = fib(n - 2);
+//     int fibN = fibNm1 + fibNm2;
+//     // printf("fib of %d is : %d \n", n, fibN);
+//     return fibN;
+// }
+
+// Practice Question 36 ===> Write a function to print the nth term of the fibonacci sequence.
+
+// HOMEWORK SET
+// a. Write a function to find usm of digits of a number;
+// b. Write a function to find squrare root of number;
+// c. Write a function to print "Hot" or "Cold" depends on the temperature user enters.
+// d. Make your own pow function.
 
 
 
