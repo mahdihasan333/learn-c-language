@@ -202,3 +202,18 @@ void doWork(int a, int b, int *sum, int *prod, int *avg){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
