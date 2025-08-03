@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <string.h>
 
@@ -11,17 +10,17 @@
 // char class[] = "Mahdi Hassan";
 
 
-// Priactice Question 47; Create a String firstName & lastName to store details of user &print all the characters using a loop.
+// Practice Question 47; Create a String firstName & lastName to store details of the user &print all the characters using a loop.
 
 // void printString(char arr[]);
 
 // int main() {
 //     char firstName[] = "Mahdi";
 //     char lastName[] = "Hassan";
-    
+
 //     printString(firstName);
 //     printString(lastName);
-    
+
 //     return 0;
 // }
 
@@ -51,8 +50,8 @@
 //     // char firstName[50];
 //     // scanf("%s", firstName);
 //     // printf("My name is: %s\n", firstName); 
-    
-    
+
+
 //     char fullName[100];
 //     scanf("%s", fullName);
 //     printf("my full name is : %s", fullName);
@@ -88,7 +87,7 @@
 //     puts(canChange);
 //     canChange = "Hello";
 //     puts(canChange);
-    
+
 //     return 0;
 // }
 
@@ -171,7 +170,7 @@
 //     char str[100];
 //     char ch;
 //     int i = 0;
-    
+
 //     while(ch != '\n'){
 //         scanf("%c", &ch);
 //         str[i] = ch;
@@ -184,28 +183,86 @@
 
 // Practice Question 51 ===> Salting ---> Find the salting form of a password entered by user if the salt is "123" & added at the end.
 
-void salting(char password[]);
+// void salting(char password[]);
+
+// int main(){
+//     char password[100];
+//     scanf("%s", password);
+//     salting(password);
+// }
+
+// void salting(char password[]){
+//     char salt[] = "123";
+//     char newPass[200];
+
+//     strcpy(newPass, password);          // newPass = 'test';
+//     strcpy(newPass, salt);              // newPass = "test" + "123"
+//     puts(newPass);
+// }
+
+
+// Practice Question 52 ===> Write a function named slice, which takes a string & returns a sliced string from index n to m.
+
+// void slice(char str[], int n, int m);
+
+// int main(){
+//     char str[] = "HelloWorld";
+//     slice(str, 3, 6);
+// }
+
+// void slice(char str[], int n, int m){       // n & m valid value
+//     char newStr[100];
+//     int j = 0;
+//     for(int i = n; i <=m; i++){
+//         newStr[j] = str[i];
+//     }
+//     newStr[j] = '\0';
+//     puts(newStr);
+// }
+
+
+// Practice Question 53 ===> Write a function to count the occurrence of vowels in a string.
+
+// int countVowels(char str[]);
+// int main(){
+//     char str[] = "HelloWorld";
+//     printf("Number of vowels are : %d", countVowels(str));
+// }
+
+// int countVowels(char str[]){
+//     int count = 0;
+
+//     for(int i = 0; str[i] != '\0'; i++){
+//         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+
+// Practice Question 54 ===> Check if a given character is present in a string or not.
+void checkChar(char str[], char ch);
 
 int main(){
-    char password[100];
-    scanf("%s", password);
-
+    char str[] = "Mahdi Hassan";
+    checkChar(str, 'x');
 }
 
-void salting(char password[]){
-    char salt[] = "123";
-    char newPass[200];
-    
-    strcpy(newPass, password);          // newPass = 'test';
-    strcpy(newPass, salt);              // newPass = "test"
-    puts(newPass);
+void checkChar(char str[], char ch){
+    for(int i = 0; str[i] != '\0'; i++){
+        if(str[i] == ch){
+            printf("Character is present!");
+            return;
+        }
+            
+    }
+    printf("Character is not present");
 }
 
 
-
-
-
-
-
-
-
+// HomeWork set
+// a. Write a program to convert all lowercase vowels to uppercase in a string.
+// b. Write a program to print the highest frequency character in a string.
+// c. Write a program to remove blank spaces in a string.
+// d. Write a program to replace lowercase letters with uppercase & vice versa in a string.
